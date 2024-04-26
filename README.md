@@ -11,7 +11,7 @@ docker run -d -p 3000:3000 --name=grafana grafana/grafana-oss
 # LOKI
 Loki extends the monitoring ecosystem by offering log aggregation and querying capabilities. Inspired by Prometheus, Loki stores log data in a highly efficient and compressed format, making it ideal for handling large volumes of log data in distributed systems. With its integration with Prometheus and compatibility with PromQL, Loki simplifies log analysis and troubleshooting, enabling users to correlate metrics and logs for deeper insights into system behavior.
 (PORT:3100)
-- to setup grafana
+- to setup loki
 docker run -d --name=loki -p 3100:3100 grafana/loki
 
 In conclusion , prometheus is used for server metrics , loki is used for log collection whereas grafana is mainly used for visualisation and creation of dashboards 
